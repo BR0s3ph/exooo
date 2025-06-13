@@ -1,0 +1,28 @@
+= Conception
+
+Comme pour chaque nouveau projet, on commence par un jour de conception. Alors molo sur la ligne de code, on va établir un cahier des charges complet que l'on validera avec le client.
+
+Pour faciliter notre développement, on va partir sur la conception d'un MVC rapide, car le client ne veut pas de front pour le moment. Il nous servira de base pour le développement de tous les microservices de l'application. 
+
+== Objectifs pédagogiques
+
+* *Analyser* un besoin client
+* *Concevoir* une solution technique
+* *Concevoir* des diagrammes UML
+
+== Étapes
+
+A partir de l'appel d'offre du client, établi un cahier des charges complet de l'application. Il faut intégrer :
+
+* les user stories
+* les use cases
+* le diagramme d'entités associations
+* le diagramme de séquence pour l'affichage de son feed
+* le diagramme d'activité pour la création d'un compte puis affichage d'un feed random
+
+Pas de maquette car pas de front à proprement parlé. On fera plus tard un schéma d'architecture (quand on saura de quoi on parle 🤓)
+
+== Bonus 
+
+* Prépare le projet avec Docker pour accueillir le MVC et les microservices.
+* Crée une collection Insomnia pour tester les futures routes de l'application.

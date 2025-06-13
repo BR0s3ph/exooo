@@ -1,0 +1,44 @@
+= S05 Challenge
+
+Marre de Facebook et Twitter ? On va écraser ces ancêtres avec notre propre réseau social ! Bon à vrai dire, en 6 jours, ça va pas être possible, mais on va quand même essayer de faire quelque chose de sympa 😉
+
+link:./CDCF.adoc[Cahier des charges fonctionnel]
+
+== Technologies utilisées
+
+* Typescript
+* Design Pattern MVC
+* NodeJs
+* Ejs (ou autre moteur de template)
+* Microservices architecture
+* MongoDB
+* Mongoose (ou TypeORM)
+* Redis (cache et PubSub)
+* Sécurité (JWT, ACM)
+
+== Énoncés
+
+Au fil des jours, tu vas passer d'un simple MVC un peu oldscool à une architecture microservices moderne et performante. Ce challenge est assez costaud, donc pas de panique si la correction diffère de ta solution, l'important est de comprendre les concepts et de les appliquer. Comparé à ce qui se fait en entreprise, on simplifie certaines implémentations. Sinon il nous aurait fallut 3 mois 😱 Bon courage !
+
+image::https://media.tenor.com/IvVt_2x3b4AAAAAC/ast%C3%A9rix-tois-mois.gif[3 mois]
+
+* link:./énoncés/J01.adoc[Jour 1]
+* link:./énoncés/J02.adoc[Jour 2]
+* link:./énoncés/J03.adoc[Jour 3]
+* link:./énoncés/J04.adoc[Jour 4]
+* link:./énoncés/J05.adoc[Jour 5]
+* link:./énoncés/J06.adoc[Jour 6]
+
+## Compétences visées
+
+* [x] CP 1 : Installer et configurer son environnement de travail en fonction du projet
+* [ ] CP 2 : Développer des interfaces utilisateur
+* [x] CP 3 : Développer des composants métier
+* [ ] CP 4 : Contribuer à la gestion d'un projet informatique
+* [x] CP 5 : Analyser les besoins et maquetter une application
+* [x] CP 6 : Définir l'architecture logicielle d'une application
+* [ ] CP 7 : Concevoir et mettre en place une base de données relationnelle
+* [x] CP 8 : Développer des composants d'accès aux données SQL et NoSQL
+* [ ] CP 9 : Préparer et exécuter les plans de tests d'une application
+* [ ] CP 10 : Préparer et documenter le déploiement d'une application
+* [ ] CP 11 : Contribuer à la mise en production dans une démarche DevOps

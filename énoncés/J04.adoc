@@ -1,0 +1,32 @@
+= API µService
+
+On rajoute 2 microservices API pour accéder aux ressources de l'application.
+
+== Objectifs pédagogiques
+
+* *Implémenter* des API REST
+* *Implémenter* des microservices
+* *Implémenter* un controle d'accès
+
+== Étapes
+
+Actuellement, nous accédons aux données des utilisateurs avec une classe model User. Elle est dupliquée dans `mvc` et dans `auth-c`. On va donc créer un microservice pour accéder aux données des utilisateurs et modifier les `mvc` et `auth-c` pour appeler l'API REST du service dédié.
+
+💡 Avec ces modifications, le MVC n'en sera plus vraiment un. C'est plutôt un front connecté a des API.
+
+⚠️ *Important* ⚠️ Il faut une base de données pour les utilisateurs et une autre pour les posts. Le champ `user_id` de la collection `post` contiendra l'email comme identifiant pour se simplifier la vie.
+
+Crée les services pour faire les actions suivantes :
+
+* CRUD pour les utilisateurs
+** Les admins peuvent supprimer un utilisateur
+** Un utilisateur peut modifier et supprimer son propre compte (⚠️ complexe)
+* CRUD pour les posts
+** Seuls les admins peuvent supprimer un post
+
+La mise en place de toutes les restrictions d'accès peut être longue 😱 De plus la mise en place sur la suppression de son propre compte est complexe. On en reparle lors de la correction, mais rien ne t'empêche d'essayer 🤓
+
+== Bonus
+
+* Implémenter Helmet sur les services d'API REST
+* Etablir le schéma d'architecture de l'application

@@ -1,0 +1,10 @@
+### Authorize user to access a resource
+POST http://localhost:3002/
+Content-Type: application/json
+headers:
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5ZjkxNjVkMi1hYzAwLTQ0OGUtYTcwZC02NDhiNzY3Mzk2YTgiLCJ1c2VybmFtZSI6Inlhbm4iLCJyb2xlIjoidXNlciIsImlhdCI6MTc0OTczMzg3MywiZXhwIjoxNzQ5NzM0MTczfQ.8qaIS1jTtcm2hj-o6N8HRHnEeZiMI9oKGsPUvy1DSJw
+
+{
+  "resource": "admin/",
+  "method": "GET"
+}

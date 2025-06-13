@@ -1,0 +1,40 @@
+@startuml erd
+
+left to right direction
+
+entity "User" as user {
+  * id
+  --
+  * firstname
+  * lastname
+  * email
+  * password
+  * image
+  * description
+  * created_at
+  * updated_at
+}
+
+entity "Post" as post {
+  * id
+  --
+  * title
+  * body
+  * image
+  * created_at
+  * updated_at
+}
+
+entity "Role" as role {
+  * id
+  --
+  * name
+  * created_at
+  * updated_at
+}
+
+user ||--o{ post
+user }o--o{ user
+role ||--o{ user
+
+@enduml

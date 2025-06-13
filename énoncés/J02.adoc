@@ -1,0 +1,20 @@
+= Création du projet
+
+On se prépare à coder comme des fous dès le jour suivant. Pour ça on se fait un MVC assez simple qui sera très utile pour la suite du projet.
+
+== Objectifs pédagogiques
+
+* *Implémenter* un MVC
+
+== Étapes
+
+A partir d'un environnement Docker, crée un projet Node en Typescript. Le MVC utilisera EJS (ou autre) comme moteur de template, et tu peux utiliser l'ORM qui te convient (on te conseille Mongoose ou TypeOrm). La correction sera faite avec Mongoose et EJS.
+
+Un autre service docker MongoDB sera nécessaire pour la base de données. Utilise un fichier d'init pour préremplir la base de données (la bdd doit être dédiée aux utilisateurs).
+
+Mets en place le MVC pour afficher :
+
+* une barre de navigation qui nous permettra d'appeler les µservices
+* une zone d'affichage des données récupérées (au format json mis en forme)
+
+Enfin, affiche la liste des utilisateurs dans la zone d'affichage.

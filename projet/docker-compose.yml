@@ -1,0 +1,22 @@
+services:
+  main:
+    container_name: main
+    build:
+      context: ./main
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./main:/app
+      - /app/node_modules
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    env_file:
+      - .docker.env
+    volumes:
+      - ./mongo.init.js:/docker-entrypoint-initdb.d/mongo.init.js
+      - /data/db

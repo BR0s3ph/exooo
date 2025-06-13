@@ -1,0 +1,16 @@
+= Feed
+
+Il est l'heure de développer la fonctionnalité secrète de notre application : le feed !
+
+== Objectifs pédagogiques
+
+* *Implémenter* un service d'agrégation des données
+* *Concevoir* un diagramme d'architecture
+
+== Étapes
+
+Crée un service qui aura pour rôle de retourner un feed de posts à l'utilisateur. Fait en sorte que ce soit performant, car pour rappel on attend 15 milliards d'utilisateurs 😱
+
+Sachant qu'on ne connait pas le fonctionnement fianl du feed, on va récupérer les 5 derniers posts de tous les utilisateurs. Sans les microservices on aurait pu faire une belle jointure, mais là, il faut faire un service de composition avec les données des `users` et des `posts`.
+
+Crée ou finalise le schéma d'architecture de l'application.

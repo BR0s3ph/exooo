@@ -1,0 +1,30 @@
+@startuml security
+
+actor User
+participant MVC
+participant Security
+participant Token
+participant "Access Control" as AC
+
+User -> MVC: Secured Request
+activate MVC
+MVC -> Security: Request
+activate Security
+Security -> Token: Request
+activate Token
+Token -> Token: Check token
+Token -> Token: Extract user
+Token -> Security: Return user
+deactivate Token
+
+Security -> AC: Request
+activate AC
+AC -> AC: Check permission\naccording to route,\nmethod and role
+AC -> Security: Response
+deactivate AC
+Security -> MVC: Response
+deactivate Security
+MVC -> User: Response
+deactivate MVC
+
+@enduml

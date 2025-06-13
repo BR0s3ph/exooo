@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+    <h1>Register</h1>
+    <form method="POST">
+      <p><input type="text" name="firstname" placeholder="firstname" required></p>
+      <p><input type="text" name="lastname" placeholder="lastname" required></p>
+      <p><input type="text" name="email" placeholder="email" required></p>
+      <p><input type="password" name="password" placeholder="password" required></p>
+      <p><input type="file" name="image" placeholder="image" required></p>
+      <p><textarea name="description" required></textarea></p>
+      <p><button type="submit">Register</button></p>
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </form>
+<%- include('partials/footer') -%>

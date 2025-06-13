@@ -1,0 +1,23 @@
+= REDIS
+
+15 milliards d'utilisateurs ça fait beaucoup de requêtes, donc on va optimiser et tracer un peu tout ça.
+
+== Objectifs pédagogiques
+
+* *Implémenter* un cache
+* *Implémenter* un publisher/subscriber
+
+== Étapes
+
+* Mettre en cache la liste des utilisateurs (TTL 1 minute)
+* Mettre en cache la liste des posts (TTL 5 minute)
+
+Pour vérifier les potentielles erreurs dans l'application, ajoute un subscriber Redis qui va logger des messages (exemple dans le service de sécurité).
+
+== Bonus
+
+Améliore les logs : 
+
+* Utilise un REDIS dédié aux logs
+* Utilise un service API de publication des messages
+* Utilise un service de souscription aux messages

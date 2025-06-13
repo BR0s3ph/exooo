@@ -1,0 +1,15 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "main": "mongo.init.js",
+  "scripts": {
+    "install": "npm --prefix authentication install & npm --prefix authorization install & npm --prefix main install",
+    "start": "npm --prefix authentication start & npm --prefix authorization start & npm --prefix main start",
+    "build": "npm --prefix authentication run build & npm --prefix authorization run build & npm --prefix main run build",
+    "dev": "npm --prefix authentication run dev & npm --prefix authorization run dev & npm --prefix main run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
